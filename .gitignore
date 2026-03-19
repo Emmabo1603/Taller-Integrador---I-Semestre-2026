@@ -1,0 +1,65 @@
+# ---- Build outputs ----
+build/
+out/
+dist/
+*.o
+*.a
+*.so
+
+# ---- RISC-V binaries ----
+*.elf
+*.bin
+*.hex
+*.img
+
+# ---- Debug / dump files ----
+*.dump
+*.lst
+*.map
+
+# ---- Logs ----
+*.log
+
+# ---- Toolchains (large, avoid committing) ----
+riscv-gnu-toolchain/
+toolchain/
+opt/riscv/
+
+# ---- Simulator outputs ----
+# Spike
+*.spike
+*.out
+
+# QEMU
+qemu.log
+*.qcow2
+
+# Verilator
+obj_dir/
+*.vcd
+
+# ---- Temporary files ----
+*.tmp
+*.swp
+*.bak
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Python (if using scripts) ----
+__pycache__/
+*.pyc
+
+# ---- CMake ----
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# ---- Make ----
+Makefile~
